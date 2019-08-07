@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Shashamane School for the Blind</title>
+    <meta name="Description" content="We educate the Blind." />
+
+    <meta property="og:type" content="place" />
+    <meta property="og:title" content="Shashamane School for the Blind" />
+    <meta
+      property="og:url"
+      content="https://shashamane-blindschool.github.io"
+    />
+    <meta
+      property="og:image"
+      content="https://shashamane-blindschool.github.io/og-image.jpg"
+    />
+    <meta
+      property="og:description"
+      content="It is the fundamental right of every child, including the blind, to have access to education."
+    />
+    <meta property="og:determiner" content="the" />
+    <meta property="place:location:latitude" content="7.189167" />
+    <meta property="place:location:longitude" content="38.590278" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <div id="intro">
+      <h1>Shashamane School for the Blind</h1>
+      <p>
+        Welcome to our Website. Here you can
+        <a href="#about">learn about our school,</a>
+        <a href="#letter">read a letter from our directress</a> or
+        <a href="#get-involved">find out how you could help our school. </a>
+        Have fun exploring.
+      </p>
+    </div>
+
+    <header>
+      <div class="logo">
+        <% const logo = require('./imgs/logo2.svg'); %>
+        <a href="#top" title="Go to top"><%= logo %></a>
+      </div>
+      <div class="links">
+        <a href="#about" class="link-main">About</a>
+        <a href="#get-involved" class="link-main">Get involved </a>
+      </div>
+    </header>
+
+    <main class="container" id="top">
+      <div class="columns col-gapless fullvh lower-border" id="start-screen">
+        <div class="column col-6 col-md-12">
+          <div id="upper-box"></div>
+          <div class="teaser-text color2-bg">
+            <p class="teaser-head">
+              “It is the fundamental right of every child, including the blind,
+              to have access to education. Educating the blind, until they reach
+              a stage of independence, is no doubt a challenging task. It is at
+              the same time a privilege.”
+            </p>
+            <br />
+            <a href="#get-involved" class="link-main cta"
+              >Learn how to help us</a
+            >
+          </div>
+        </div>
+        <div class="column col-6 col-md-12">
+          <div class="teaser-img color4-bg">
+            <div class="sticky sticky-links">
+              <a href="#about" class="link-main">About</a>
+              <a href="#get-involved" class="link-main">Get involved </a>
+            </div>
+            <% const kids = require('./imgs/kids.jpg'); %>
+            <img
+              srcset="<%= kids.srcSet %>"
+              src="<%= kids.src %>"
+              class="teaser-corner"
+              title="Students in front of the school"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section id="about">
+        <div class="lower-border sticky">
+          <h2 class="headline">
+            <a href="#top" title="previous section">&#9650;</a> About
+            <a href="#letter" title="next section">&#9660;</a>
+          </h2>
+        </div>
+
+        <div class="columns col-gapless lower-border" id="about-line1">
+          <div class="column col-7 col-md-12 col-full-img color6-bg">
+            <% const school = require('./imgs/together-color.jpg'); %>
+            <img
+              srcset="<%= school.srcSet %>"
+              src="<%= school.src %>"
+              title="Students in front of the school"
+            />
+          </div>
+          <div class="column col-5 col-md-12 col-school color6-bg">
+            <h3>The school</h3>
+            <p>
+              Shashemene Catholic School for the Blind and visually Impaired is
+              one of the residential schools run by the Apostolic Vicariate of
+              Meki. It is dedicated to provide basic education and various kinds
+              of support to blind and visually impaired individuals in its
+              serene environment, suitable for learning and rehabilitation of
+              the blind.
+            </p>
+
+            <p>
+              Shashemane School for the Blind (SSB) has endeavoured to give
+              future and a home to the visually challenged. Our objective is to
+              help our students towards self reliance through education. The
+              school covers the full expenses of its students from grade 1 to 6.
+              Every need of the children is seen to as far as we can.
+            </p>
+
+            <p>
+              The journey of SSB throughout the years has been one of challenge
+              and success, sadness and joy, and above all growth and learning.
+              Although more difficulties are sure to arise along the way, the
+              Center will continue its journey in the hope of reaching many more
+              individuals and families and becoming a national focal point for
+              empowering visually impaired Ethiopians through education,
+              vocational training, and life skills and make them self reliant.
+            </p>
+          </div>
+        </div>
+
+        <div class="lower-border">
+          <h2 class="quote">
+            Every child has to be given a chance to prove what they can do.
+          </h2>
+        </div>
+
+        <div class="columns col-gapless lower-border" id="about-line2">
+          <div class="column col-5 col-lg-6 col-sm-12 col-goals color4-bg">
+            <h3>Our goals</h3>
+            <p>
+              The goal of Shashemane School for the Blind is to address the
+              needs of the visually impaired children from all over Ethiopia, to
+              enhance their lives and opportunities through formal education and
+              to make them self reliant. These children leave the Center
+              empowered to live independent lives, and to act as a voice for
+              equal rights for all those living with disabilities.
+            </p>
+          </div>
+
+          <div class="column col-7 col-lg-6 col-sm-12 color3-bg col-full-img">
+            <% const sitting = require('./imgs/sitting.jpg'); %>
+            <img
+              srcset="<%= sitting.srcSet %>"
+              src="<%= sitting.src %>"
+              title="School girls sitting in a row"
+            />
+          </div>
+        </div>
+
+        <div class="columns col-gapless lower-border" id="about-line3">
+          <div class="column col-4 col-lg-6 col-sm-12 col-map color6-bg">
+            <h3>The location</h3>
+            <% const map = require('./imgs/map.svg'); %>
+            <div class="map"><%= map %></div>
+            <div class="text">
+              <p>
+                Shashemene (pronounced Sha-sha-mene) is a town located in the
+                south of the Democratic Republic of Ethiopia in the Oromia
+                Region, roughly 150 miles from the capital city of Addis Ababa.
+                It is located in the Rift Valley at an altitude of 2000 feet.
+              </p>
+            </div>
+            <div class="fill-rest color2-bg"></div>
+          </div>
+          <div class="column col-4 col-lg-12 col-sm-12 col-teach color1-bg">
+            <h3>What we teach</h3>
+            <p>
+              The students are taught basic literacy in Amharic, Oromo and
+              English and furthermore, braille, vocational skills and self-care.
+              Their communal boarding house environment helps nurturing
+              one-on-one mentoring relationships, as well as the life skills of
+              mobility, cooking, nutrition, music, first-aid, and handicraft.
+            </p>
+            <p>
+              Regular health examinations and counseling are also available to
+              the children residing in the boarding facilities.
+            </p>
+          </div>
+          <div class="column col-4 col-lg-6 col-sm-12 col-goals color3-bg">
+            <h3>School activities</h3>
+            <p>
+              Additionally, just like any other sighted person the students take
+              part in sports, music, drama, composing of poems, football games
+              and do handicrafts. At times they also participate in the
+              Paralympics on a regional level. If other activities are organised
+              in or outside the town, the students get the opportunity to join.
+              We wish for them to experience and enjoy the privileges of any
+              other healthy child. After all they miss only the sense of sight.
+            </p>
+          </div>
+        </div>
+
+        <div class="lower-border">
+          <h2 class="quote">
+            We wish for them to experience and enjoy the privileges of any other
+            healthy child.
+          </h2>
+        </div>
+
+        <div class="columns col-gapless lower-border" id="about-line4">
+          <div class="column col-4 col-lg-4 col-sm-12 col-full-img">
+            <% const gardening = require('./imgs/gardening.jpg'); %>
+            <img
+              srcset="<%= gardening.srcSet %>"
+              src="<%= gardening.src %>"
+              title="Students working in the schools garden"
+            />
+          </div>
+          <div class="column col-4 col-lg-4 col-sm-12 col-img-frame-small">
+            <% const classroom = require('./imgs/classroom.jpg'); %>
+            <img
+              srcset="<%= classroom.srcSet %>"
+              src="<%= classroom.src %>"
+              title="Students sitting in a glassroom with wooden desks and a green wall."
+            />
+          </div>
+          <div class="column col-4 col-lg-4 col-sm-12 col-full-img">
+            <% const sports = require('./imgs/sports.jpg'); %>
+            <img
+              srcset="<%= sports.srcSet %>"
+              src="<%= sports.src %>"
+              title="Sport activities: Tug of war "
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="letter">
+        <div class="sticky lower-border">
+          <h2 class="headline">
+            <a href="#about" title="previous section">&#9650;</a>A letter from
+            the directress<a href="#testimonies" title="next section"
+              >&#9660;</a
+            >
+          </h2>
+        </div>
+
+        <div class="columns col-gapless lower-border" id="letter-line1">
+          <div class="column col-6 col-sm-12 col-full-img color6-bg">
+            <% const two = require('./imgs/two.jpg'); %>
+            <img
+              srcset="<%= two.srcSet %>"
+              src="<%= two.src %>"
+              title="Two students of the school."
+            />
+          </div>
+          <div class="column col-6 col-sm-12 col-letter-text color6-bg">
+            <div class="fill-rest color1-bg"></div>
+            <p>
+              “Inspired by the spirit of God, and our patron St. Francis of
+              Assisi we the Franciscan Sisters of St. Mary of the Angels,
+              endeavor to care for our visually challenged students by
+              cherishing the uniqueness of each person in an atmosphere
+              permeated by the Christian values of Truth, Justice and
+              Preciousness of each child. Shashemane school for the Blind in
+              cooperation with the Meki Vicariate and our benefactors aims to
+              enable each student to achieve her or his full potential
+              physically, emotionally, intellectually, socially and spiritually.
+            </p>
+            <p>
+              Shashemane School for the Blind (SSB) has endeavoured to give
+              future and a home to the visually challenged. Our objective is to
+              help our students towards self reliance through education. The
+              school covers the full expenses of its students from grade 1 to 6.
+              Every need of the children is seen to as far as we can.
+            </p>
+            <p>
+              We undertake this mission in cooperation with a dedicated team of
+              teachers, caregivers and other supporters. Our small class size
+              allows us to offer intensive, individual attention in a relaxed,
+              friendly and caring environment.
+            </p>
+          </div>
+        </div>
+
+        <div class="lower-border">
+          <h2 class="quote">
+            With proper education, it is possible for blind people to learn, and
+            see that they have potential.
+          </h2>
+        </div>
+
+        <div class="columns col-gapless lower-border" id="letter-line2">
+          <div class="column col-5 col-sm-12 col-letter-text color6-bg">
+            <p>
+              Shashamene School for the Blind had been at the forefront of
+              introducing care for visually challenged children in a residential
+              setting for the past 39 years. Indeed we have a sense of profound
+              sentiments of thanksgiving to God for choosing us to nurture life.
+              Each year the school caters to more than 100 students irrespective
+              of sex, tribe, and religion. Currently we are trying our best to
+              provide a range of progressive programs to enhance the educational
+              opportunities of the students.
+            </p>
+            <p>
+              At Shashemane School for the Blind our young ones find a real and
+              true home, a space where they are free to grow in openness,
+              security and peace. The school is going through the usual trials
+              and tests of growth and economic crisis but has been empowered by
+              the concern and support of our friends and donors.”
+            </p>
+            <div class="fill-rest color1-bg"></div>
+          </div>
+          <div class="column col-7 col-sm-12 col-img-frame color4-bg">
+            <% const front = require('./imgs/front.jpg'); %>
+            <img
+              srcset="<%= front.srcSet %>"
+              src="<%= front.src %>"
+              title="The school building with flowers in the foreground."
+              class=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonies">
+        <div class="lower-border sticky">
+          <h2 class="headline">
+            <a href="#letter" title="previous section">&#9650;</a>Testimonials<a
+              href="#get-involved"
+              title="next section"
+              >&#9660;</a
+            >
+          </h2>
+        </div>
+        <div class="columns col-gapless lower-border" id="testimonies-line1">
+          <div class="column col-4 col-md-12 col-img-frame color4-bg">
+            <% const haimonot = require('./imgs/haimonot.jpg'); %>
+            <img
+              srcset="<%= haimonot.srcSet %>"
+              src="<%= haimonot.src %>"
+              title="Haimonot Sibhatu in graduation dress"
+              style="object-fit: contain"
+            />
+          </div>
+          <div class="column col-8 col-md-12 color2-bg col-testimonials">
+            <h3>Miss Haimonot Sibhatu</h3>
+            <div class="columns col-gapless">
+              <div class="column col-6 col-sm-12 color6-bg col-testimonials">
+                <p>
+                  “I wish to thank you for the support and help you provided,
+                  for your dedication, attention and open-minded thinking and
+                  for your readiness to help. I was just 9 years old when I
+                  joined Shashemane Boarding school. My family lives in a
+                  village far from the city. They are poor and their only income
+                  if farming which enables us to live from hand to mouth. My
+                  father died when I was 1 year old. I become blind as a result
+                  of absence of medicine. As my parents could not afford my
+                  aunty brought me to Addis Ababa to save me from blindness but
+                  because of financial difficulties she could not save my eyes.
+                  She was confused and stressed as to what to do. At this moment
+                  Shashemane school opened the door for us and received me to
+                  give education and saw to all my needs.
+                </p>
+              </div>
+              <div class="column col-6 col-sm-12 color6-bg col-testimonials">
+                <p>
+                  This school was like a parent who gave me good parenting and
+                  foundation to develop self confidence, a sense of self-esteem
+                  and how to handle difficult situation. When my aunt passed
+                  away the school staff was with me and gave courage and to be
+                  strong. Even after completely grade 6 the school continued to
+                  assist me financially and through all kinds of advice
+                  therefore, even though I was in Addis Ababa for higher
+                  education , I was thinking that I was within the boarding
+                  school. With the help of the school I am graduated from Addis
+                  Ababa University in social sciences school of social work .
+                  Thank you for all you did to me, you and the school is always
+                  in my heart and I missed you all the time.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="get-involved">
+        <div class="lower-border sticky">
+          <h2 class="headline">
+            <a href="#testimonies" title="previous section">&#9650;</a>Get
+            involved
+          </h2>
+        </div>
+
+        <div class="columns col-gapless lower-border" id="get-involved-line1">
+          <div class="column col-5 col-md-12 col-volunteer color3-bg">
+            <h3>Volunteering</h3>
+            <p>
+              We invite you to become a Volunteer. Many of our Students depend
+              on volunteers for improving their quality of life. In fact,
+              Volunteers are a vital part of our program’s success.
+            </p>
+            <h3>Get in touch</h3>
+            <p>
+              <% const logo_orange = require('./imgs/logo_old_la.png'); %>
+              <img
+                srcset="<%= logo_orange.srcSet %>"
+                src="<%= logo_orange.src %>"
+                title="Haimonot Sibhatu in graduation dress"
+                style="object-fit: contain"
+                class="logoContact"
+              />
+              Shashemane School for the Blind<br />
+              P.O.Box: 18 <br />
+              Ethiopia, Oromia<br />
+              Phone Number Off. +251 461 102 728<br />
+              Phone Number Res. +251 461 102 642<br />
+              Mobile: +251 921 874 833 <br />
+              Email: ethssb@gmail.com
+            </p>
+          </div>
+
+          <div class="column col-7 col-md-12 col-full-img color6-bg">
+            <% const volunteer = require('./imgs/volunteer.jpg'); %>
+            <img
+              srcset="<%= volunteer.srcSet %>"
+              src="<%= volunteer.src %>"
+              title="A volunteer is assisting a group of students."
+            />
+          </div>
+        </div>
+
+        <div class="columns col-gapless sticky-bottom" id="footer">
+          <div class="column col-7  col-lg-12 col-xl-6 color2-bg col-footer">
+            <h3>Shashamane School for the Blind</h3>
+            <p>© 2019<br /></p>
+          </div>
+          <div class="column col-5  col-lg-12 col-xl-6 color2-bg col-footer">
+            <h4>
+              Lord, Make me an instrument of your Peace; <br />
+              Where there is darkness, let me bring light, <br />
+              And where there is sadness, let me bring joy.<br />
+              <i>– St. Francis</i>
+            </h4>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

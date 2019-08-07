@@ -1,0 +1,31 @@
+@import '_variables.scss';
+
+@media screen and (min-width: $stickyStart) {
+  .sticky {
+    position: relative;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 12px;
+    z-index: 20;
+
+    h2.headline {
+      border-top: 1px solid $colorText;
+      margin-top: -1px;
+    }
+  }
+
+  .links {
+    display: none;
+  }
+
+  .sticky-links {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    text-align: right;
+    padding: 26px 30px !important;
+    a {
+      margin-left: 20px;
+    }
+  }
+}
